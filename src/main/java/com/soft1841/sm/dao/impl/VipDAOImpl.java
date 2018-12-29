@@ -9,11 +9,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * vipDAO DE 实现类
- * @auther
- * 2018.12.26
- */
+
 public class VipDAOImpl implements VipDAO {
     @Override
     public List<Vip> selectVip() throws SQLException {
@@ -41,7 +37,7 @@ public class VipDAOImpl implements VipDAO {
     }
 
     @Override
-    public long insertVip(Vip vip) throws SQLException {
+    public Long insertVip(Vip vip) throws SQLException {
         return Db.use().insertForGeneratedKey(
                 Entity.create("t_vip")
                         .set("name",vip.getName())

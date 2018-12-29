@@ -47,4 +47,10 @@ public class DAOFactory {
     public static GoodDAO getGoodDAOInstance(){
         return new GoodDAOImpl();
     }
+
+    /**
+     * 管理员
+     * @return
+     */
+    public static GuanLiDAO getGuanLiInstance(){ return  new GuanLiDAOImpl();}
 }

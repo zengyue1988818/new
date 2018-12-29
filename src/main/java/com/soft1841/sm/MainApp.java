@@ -1,17 +1,15 @@
 package com.soft1841.sm;
-
+/**
+ * 后台主界面App
+ * @auther
+ * 2018.12.24
+ */
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-
-/**
- * 后台主界面App
- * @auther
- * 2018.12.24
- */
 public class MainApp extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
@@ -28,4 +26,3 @@ public class MainApp extends Application {
         launch(args);
     }
 }
-

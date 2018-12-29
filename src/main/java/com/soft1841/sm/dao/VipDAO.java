@@ -1,16 +1,13 @@
 package com.soft1841.sm.dao;
 
 
+
 import cn.hutool.db.Entity;
 import com.soft1841.sm.entity.Vip;
 import java.sql.SQLException;
 import java.util.List;
 
-/**
- * Vip 的DAO 接口
- * @auther
- * 2018.12.26
- */
+
 public interface VipDAO {
     /**
      * 查询所有Vip的信息
@@ -41,5 +38,5 @@ public interface VipDAO {
      * @return
      * @throws SQLException
      */
-     long insertVip(Vip vip) throws SQLException;
+    Long insertVip(Vip vip) throws SQLException;
 }

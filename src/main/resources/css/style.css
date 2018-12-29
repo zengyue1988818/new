@@ -19,21 +19,21 @@
     -fx-text-alignment: center;
     -fx-pref-height: 38px;
     -fx-font-size: 18px;
-    -fx-background-color:  #1E90FF;
+    -fx-background-color: #9ac4ff;
     -fx-cursor: hand;
     -fx-border-radius: 10px;
     -fx-background-radius: 10px;
 }
 .label-big-smallblack{
     -fx-font-size: 35px;
-    -fx-text-fill: #191970;
+    -fx-text-fill: #704846;
 }
 .label-small-red{
     -fx-font-size: 18px;
-    -fx-text-fill: #FF6347;
+    -fx-text-fill: #ff9bad;
 }
 .label-big-red{
-    -fx-text-fill: #FA8072;
+    -fx-text-fill: #a8faed;
     -fx-font-size: 18px;
 }
 .label-small-black{
