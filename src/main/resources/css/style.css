@@ -1,5 +1,5 @@
 .login-btn{
-    -fx-background-color:#1E90FF;
+    -fx-background-color: #31c5ff;
     -fx-text-fill: white ;
     -fx-font-size: 16px;
     -fx-cursor: hand;
@@ -19,7 +19,7 @@
     -fx-text-alignment: center;
     -fx-pref-height: 38px;
     -fx-font-size: 18px;
-    -fx-background-color: #9ac4ff;
+    -fx-background-color: #a8ff88;
     -fx-cursor: hand;
     -fx-border-radius: 10px;
     -fx-background-radius: 10px;

@@ -28,9 +28,9 @@
         <Label text="密码 ：" styleClass="label-small-black " />
         <PasswordField fx:id="passwordField"/>
     </HBox>
-    <HBox spacing="80" AnchorPane.topAnchor="320" AnchorPane.leftAnchor="400" >
+    <HBox spacing="100" AnchorPane.topAnchor="320" AnchorPane.leftAnchor="500" >
         <Button text="登录" styleClass="button-blue " onAction="#qiantailogin"/>
-        <Button text="取消" styleClass="button-blue " />
+
     </HBox>
 
 </AnchorPane>

@@ -63,10 +63,11 @@ public class GoodController implements Initializable {
         initComBox();
     }
 
-    //表格初始化
+    //表格初始化方法
     private void initTable() {
         //水平方向不显示滚动条，表格的列宽会均匀分布
         goodTable.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
+
         //1.调用查询所有商品的方法，
         goodsList = goodService.getAllGoods();
         //将实体集合作为参数，调用显示数据的方法，可以在界面的表格中显示商品模型集合的值
@@ -228,11 +229,5 @@ public class GoodController implements Initializable {
         showGoodData(goodsList);
     }
 
-//    //数据导出方法，采用hutoo提供的工具类
-//    public void export() {
-//        ExcelExport.export(goodsList);
-//        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-//        alert.setTitle("提示信息");
-//        alert.setHeaderText("商品数据已导出!请到F盘根目录查看!");
-//        alert.showAndWait();
+
 }

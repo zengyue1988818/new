@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<AnchorPane prefHeight="571.0" prefWidth="909.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+      <!--拉升效果-->
+      <FlowPane alignment="CENTER" prefHeight="80.0" AnchorPane.leftAnchor="10" hgap="15"
+                AnchorPane.rightAnchor="10" AnchorPane.topAnchor="10"
+      style="-fx-background-color: #FF0000">
+         <TextField  prefWidth="120.0" promptText="请输入条码" focusTraversable="false" />
+          <Button text="确定"/>
+          <Label text="应收"/>
+          <Label text="88"/>
+          <Label text="实收"/>
+          <Label text="100"/>
+          <Label text="找零"/>
+          <Label text="12"/>
+      </FlowPane>
+
+    <GridPane hgap="10" vgap="10"
+              AnchorPane.topAnchor="90"
+              AnchorPane.leftAnchor="10"
+              AnchorPane.rightAnchor="10"
+              AnchorPane.bottomAnchor="10">
+        <!--下部是一个网格布局，一行两列-->
+
+        <!--指定行列从零开始-->
+        <TableView GridPane.rowIndex="0" GridPane.columnIndex="0">
+
+        </TableView>
+        <AnchorPane GridPane.columnIndex="1" GridPane.rowIndex="0">
+            <!--顶部的收银信息-->
+            <Label text="收银员：" AnchorPane.topAnchor="10" AnchorPane.leftAnchor="10"/>
+            <Label text="10101" AnchorPane.topAnchor="10" AnchorPane.leftAnchor="100"/>
+            <Label text="姓名：" AnchorPane.topAnchor="10" AnchorPane.leftAnchor="200"/>
+            <Label text="侯粤嘉" AnchorPane.topAnchor="10" AnchorPane.leftAnchor="250"/>
+
+
+            <Label text="班次" AnchorPane.topAnchor="40" AnchorPane.leftAnchor="10"/>
+            <Label text="流水号" AnchorPane.topAnchor="40" AnchorPane.leftAnchor="200"/>
+            <Label text="会员号" AnchorPane.topAnchor="70" AnchorPane.leftAnchor="10"/>
+            <Label text="折扣" AnchorPane.topAnchor="70" AnchorPane.leftAnchor="200"/>
+            <!--诺干按钮，用网格布局-->
+            <GridPane hgap="10" vgap="10" AnchorPane.topAnchor="120"
+            AnchorPane.leftAnchor="10" AnchorPane.rightAnchor="10" AnchorPane.bottomAnchor="10">
+
+                <Button text="现金支付" prefWidth="100" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                <Button text="1" prefWidth="80" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+                <Button text="2" prefWidth="80" GridPane.rowIndex="0" GridPane.columnIndex="2"/>
+                <Button text="3" prefWidth="80" GridPane.rowIndex="0" GridPane.columnIndex="3"/>
+
+                <Button text="支付宝" prefWidth="100" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                <Button text="4" prefWidth="80" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+                <Button text="5" prefWidth="80" GridPane.rowIndex="1" GridPane.columnIndex="2"/>
+                <Button text="6" prefWidth="80" GridPane.rowIndex="1" GridPane.columnIndex="3"/>
+
+                <Button text="微信支付" prefWidth="100" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                <Button text="7" prefWidth="80" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+                <Button text="8" prefWidth="80" GridPane.rowIndex="2" GridPane.columnIndex="2"/>
+                <Button text="9" prefWidth="80" GridPane.rowIndex="2" GridPane.columnIndex="3"/>
+
+                <!--清空第四行控件-->
+                      <HBox style="-fx-background-color: #00FF00" prefWidth="50"
+                            GridPane.rowIndex="3" GridPane.columnSpan="2" GridPane.columnIndex="0"/>
+                <Button text="结算" prefWidth="160" GridPane.columnSpan="2" GridPane.rowIndex="3" GridPane.columnIndex="2"/>
+
+            </GridPane>
+        </AnchorPane>
+    </GridPane>
+</AnchorPane>
