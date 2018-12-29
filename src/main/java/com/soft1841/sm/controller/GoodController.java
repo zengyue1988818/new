@@ -28,10 +28,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.ResourceBundle;
 
-/**
- * @author 许源
- * 商品控制台
- */
+
 public class GoodController implements Initializable {
     //布局文件中的表格视图对象，用来显示数据库中读取的所有商品信息
     @FXML

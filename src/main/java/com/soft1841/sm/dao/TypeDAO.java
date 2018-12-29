@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
  * 商品类别DAO接口
- * @auther 徐鹏
+ * @auther
  * 2018年12月24日
  */
 public interface TypeDAO {

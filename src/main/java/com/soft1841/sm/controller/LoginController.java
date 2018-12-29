@@ -11,11 +11,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
-/**
- * 后台登陆界面
- * @auther
- * 2018.12.26
- */
+
 public class LoginController {
     @FXML
     private TextField accountField;
