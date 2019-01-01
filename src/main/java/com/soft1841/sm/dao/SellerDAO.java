@@ -3,6 +3,7 @@ package com.soft1841.sm.dao;
 import com.soft1841.sm.entity.Seller;
 
 import java.sql.SQLException;
+import java.util.List;
 
 /**
  * 后台DAO 接口
@@ -17,4 +18,12 @@ public interface SellerDAO {
      * @throws SQLException
      */
     Seller getSellerByNumber(String number)throws SQLException;
+
+
+    /**
+     * 查询所有收银员
+     * @return
+     * @throws SQLException
+     */
+    List<Seller> selectSeller() throws SQLException;
 }

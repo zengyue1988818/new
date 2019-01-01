@@ -6,6 +6,8 @@ import com.soft1841.sm.service.SellerService;
 import com.soft1841.sm.utils.DAOFactory;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 后台的业务逻辑接口的实现类
@@ -31,8 +33,17 @@ public class SellerServiceImpl implements SellerService {
             }
         }
 
-
-
         return false;
+    }
+
+    @Override
+    public List<Seller> getAllSellers() {
+        List<Seller> adminList = new ArrayList<>();
+        try {
+            adminList = sellerDAO.selectSeller();
+        } catch (SQLException e) {
+            System.err.println("查询所有管理员出现异常!");
+        }
+        return adminList;
     }
 }

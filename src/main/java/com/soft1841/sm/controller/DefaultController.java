@@ -14,7 +14,7 @@ public class DefaultController implements Initializable {
     private ImageView bookImg;
 
     //轮播图资源数组
-    String[] imgPath = {"good1.jpg", "good2.jpg", "good3.jpg", "good4.jpg", "good5.jpg"};
+    String[] imgPath = {"1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"};
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {

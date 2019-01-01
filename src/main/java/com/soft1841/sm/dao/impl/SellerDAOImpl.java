@@ -6,6 +6,8 @@ import com.soft1841.sm.dao.SellerDAO;
 import com.soft1841.sm.entity.Seller;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 后台登陆的DAO 实现类
@@ -19,6 +21,23 @@ public class SellerDAOImpl implements SellerDAO {
         Entity entity =  Db.use().queryOne("SELECT * FROM t_cashier WHERE number = ? ",number );
         return convertSeller(entity);
     }
+
+    @Override
+    public List<Seller> selectSeller() throws SQLException {
+        List<Entity> entityList = Db.use().query("SELECT * FROM t_cashier WHERE account = ?");
+        List<Seller> sellerList = new ArrayList<>();
+        for (Entity entity: entityList) {
+            sellerList.add(convertSeller(entity));
+
+        }
+        return sellerList;
+    }
+
+    /**
+     * 封装一个将Entity转换为Seller的方法
+     * @param entity
+     * @return
+     */
     private Seller convertSeller(Entity entity){
         Seller seller = new Seller(entity.getLong("id"),entity.getStr("number"),
                 entity.getStr("password"),entity.getStr("name"));
