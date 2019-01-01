@@ -44,7 +44,7 @@ public class MainController implements Initializable {
         switchView("type_analysis.fxml");
     }
     public  void listGoodsAnalysis()throws Exception{
-        switchView("goods_analysis.fxml");
+        switchView("good_analysis.fxml");
     }
         //封装一个切换视图的方法：用来根据fxml文件切换视图内容
     private void switchView(String fileName) throws Exception {

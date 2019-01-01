@@ -13,7 +13,7 @@
 
 <AnchorPane xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.soft1841.sm.controller.GoodController">
     <ImageView fitHeight="751.0" fitWidth="984">
-        <Image url="/img/22.jpg" />
+        <Image url="/img/houtaibeijing.jpg" />
     </ImageView>
     <HBox alignment="BOTTOM_CENTER" spacing="10" AnchorPane.leftAnchor="10" AnchorPane.topAnchor="10">
         <Button onAction="#newGoodStage" styleClass="green-theme,btn-radius" text="添加商品" />

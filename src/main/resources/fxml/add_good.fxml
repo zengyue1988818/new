@@ -14,7 +14,7 @@
             fx:controller="com.soft1841.sm.controller.AddGoodController"
             prefHeight="400.0" prefWidth="600.0">
     <ImageView fitHeight="611" fitWidth="984">
-        <Image url="/img/11.jpg"/>
+        <Image url="/img/houtaibeijing.jpg"/>
     </ImageView>
     <HBox AnchorPane.topAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0"
           minHeight="50" alignment="CENTER" styleClass="green-theme">

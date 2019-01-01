@@ -35,4 +35,12 @@ public interface GuanLiDAO  {
      * @throws SQLException
      */
     long insertGuanLi(GuanLi guanLi) throws  SQLException;
+
+
+    /**
+     * 统计管理员的信息
+     * @return
+     * @throws SQLException
+     */
+    int countGuanLi()throws SQLException;
 }
