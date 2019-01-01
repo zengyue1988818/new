@@ -18,7 +18,7 @@ public interface GuanLiDAO  {
      * @param id
      * @return
      */
-    Entity getGuanLiById (long id) throws SQLException;
+    Entity getGuanLiById(long id) throws SQLException;
 
     /**
      * 根据id来删除管理员的信息

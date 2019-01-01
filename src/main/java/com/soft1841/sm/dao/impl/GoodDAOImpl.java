@@ -84,6 +84,11 @@ public class GoodDAOImpl implements GoodDAO {
 
     }
 
+    @Override
+    public int countGoods() throws SQLException {
+        return  Db.use().queryNumber("SELECT COUNT(*) FROM t_goods ").intValue();
+    }
+
     /**
      * @param entity
      * @return

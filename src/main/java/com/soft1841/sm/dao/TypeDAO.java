@@ -5,11 +5,6 @@ import com.soft1841.sm.entity.Type;
 import java.sql.SQLException;
 import java.util.List;
 
-/**
- * 商品类别DAO接口
- * @auther
- * 2018年12月24日
- */
 public interface TypeDAO {
 
     /**
@@ -39,4 +34,11 @@ public interface TypeDAO {
      */
     Type getTypeById(long id) throws SQLException;
 
+//    /**
+//     * 统计类别的总数
+//     * @return
+//     * @throws SQLException
+//     */
+//    int countTypes() throws SQLException;
+    int countTypes() throws  SQLException;
 }
