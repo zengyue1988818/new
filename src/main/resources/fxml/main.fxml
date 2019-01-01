@@ -52,10 +52,6 @@
                             <Button onAction="#listType" prefHeight="30.0" prefWidth="115.0" styleClass="button-blue" text="商 品 类 别" />
                         </VBox>
                         <VBox spacing="20">
-                            <ImageView fitHeight="97.0" fitWidth="113.0">
-                                <Image url="/img/shangpintongji.png" />
-                            </ImageView>
-                            <Button styleClass="button-blue" text="类别统计分析" />
                         </VBox>
                         <VBox spacing="20">
                             <ImageView fitHeight="97.0" fitWidth="101.0">

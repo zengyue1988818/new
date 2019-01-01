@@ -1,8 +1,5 @@
 package com.soft1841.sm.controller;
 
-
-import com.soft1841.sm.entity.GuanLi;
-import javafx.application.Platform;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -14,59 +11,12 @@ import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 import java.io.IOException;
 import java.net.URL;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.ResourceBundle;
 
 
 public class MainController implements Initializable {
     @FXML
     private StackPane mainContainer;
-    @FXML
-    private Label timeLabel;
-    //退出系统
-    @FXML
-    private javafx.scene.control.Button closeButton;
-    @FXML
-    private void closeButtonAction(){
-        Stage stage = (Stage) closeButton.getScene().getWindow();
-        stage.close();
-    }
-    public void initialize(URL location, ResourceBundle resources) {
-        //启一个线程，用来同步获取系统时间
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                while (true) {
-                    //获取系统当前时间
-                    LocalDateTime now = LocalDateTime.now();
-                    //格式化时间
-                    DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy年MM月dd日 HH:mm:ss");
-                    String timeString = dateTimeFormatter.format(now);
-                    //启一个UI线程
-                    Platform.runLater(new Runnable() {
-                        @Override
-                        public void run() {
-                            //将格式化后的日期时间显示在标签上
-                            timeLabel.setText(timeString);
-                        }
-                    });
-                    try {
-                        Thread.sleep(1000);
-                    } catch (InterruptedException e) {
-                        System.err.println("中断异常");
-                    }
-                }
-            }
-        }).start();
-
-        try {
-            AnchorPane anchorPane = new FXMLLoader(getClass().getResource("/fxml/default.fxml")).load();
-            mainContainer.getChildren().add(anchorPane);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
 
     //显示商品类别数据
     public void listType() throws Exception {
@@ -104,5 +54,10 @@ public class MainController implements Initializable {
         //读取新的布局文件加入主面板
         AnchorPane anchorPane = new FXMLLoader(getClass().getResource("/fxml/" + fileName)).load();
         mainContainer.getChildren().add(anchorPane);
+    }
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+
     }
 }

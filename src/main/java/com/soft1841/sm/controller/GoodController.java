@@ -6,6 +6,7 @@ import com.soft1841.sm.entity.Type;
 import com.soft1841.sm.service.GoodService;
 import com.soft1841.sm.service.TypeService;
 import com.soft1841.sm.utils.ComponentUtil;
+import com.soft1841.sm.utils.ExcelExport;
 import com.soft1841.sm.utils.ServiceFactory;
 import javafx.beans.property.ReadOnlyObjectWrapper;
 import javafx.collections.FXCollections;
@@ -229,5 +230,12 @@ public class GoodController implements Initializable {
         showGoodData(goodsList);
     }
 
-
+    //数据导出方法，采用hutool提供的工具类
+    public void export() {
+        ExcelExport.export(goodsList);
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("提示信息");
+        alert.setHeaderText("商品数据已导出!请到E盘根目录查看!");
+        alert.showAndWait();
+    }
 }
